@@ -12,7 +12,7 @@
     "watch-css": "nodemon --ext styl --watch ./src/css --exec 'npm run css'",
     "watch-js": "nodemon --ext js --watch ./src/js --exec 'npm run js'",
     "watch": "npm run watch-html & npm run watch-css & npm run watch-js",
-    "server": "npm run watch & live-server --port=3000 ./dist"
+    "start": "npm run watch & live-server --port=3000 ./dist"
   },
   "author": "inaki",
   "license": "ISC",
