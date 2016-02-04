@@ -84,22 +84,24 @@ ul
     margin-right 0px
 
 .graphics
-  height 800px
   ul li
     width 220px
-    background-color thistle
-    overflow hidden
-    height 100%
+    height auto
+
   li:nth-child(3n+3)
     margin-right 0px
 
-.masonryImage img
-  max-width: 220px;
-  border-radius: 3px;
-
+.masonry
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+  img
+    width 100%
 
 .video
-  height 400px
+  height 300px
   ul li
     width 220px
     background-color black
@@ -107,7 +109,7 @@ ul
     margin-right 0px
 
 .threed
-  height 400px
+  height 300px
   ul li
     width 220px
     background-color black
@@ -115,7 +117,7 @@ ul
     margin-right 0px
 
 .looks
-  height 400px
+  height 300px
   ul li
     width 220px
     background-color black
