@@ -25,6 +25,7 @@
     "uglify-js": "^2.6.1"
   },
   "dependencies": {
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "masonry-layout": "^4.0.0"
   }
 }

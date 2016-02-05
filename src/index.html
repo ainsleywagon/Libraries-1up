@@ -116,12 +116,12 @@
       <div class="graphics masonry">
         <h4>Graphics</h4>
         <ul>
-          <li><img src="img/image1.jpg" alt=""></li>
-          <li><img src="img/image2.jpg" alt=""></li>
-          <li><img src="img/image3.jpg" alt=""></li>
-          <li><img src="img/image4.jpg" alt=""></li>
-          <li><img src="img/image5.jpg" alt=""></li>
-          <li><img src="img/image6.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image1.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image2.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image3.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image4.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image5.jpg" alt=""></li>
+          <li class="grid-item"><img src="img/image6.jpg" alt=""></li>
         </ul>
       </div>
 
@@ -168,7 +168,24 @@
   <footer>
 
   </footer>
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+  <script>
+    // vanilla JS
+    // init with element
+    var grid = document.querySelector('.grid');
+    var msnry = new Masonry( grid, {
+      // options...
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });
+
+    // init with selector
+    var msnry = new Masonry( '.grid', {
+      // options...
+    });
+  </script>
   <script src="js/bundle.js"></script>
+
 
 </body>
 </html>
