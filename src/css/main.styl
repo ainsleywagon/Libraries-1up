@@ -1,5 +1,6 @@
 @import "includes/paragraphs"
 @import "includes/header"
+@import "includes/container"
 
 bgcolor = #F5F5F5
 
@@ -8,6 +9,10 @@ body
   text-align center
   margin 0 auto
   font-family 'Adobe Clean', sans-serif
+  font-weight 200
+
+  a
+    text-decoration none
 
 ul
   -webkit-padding-start 0px
@@ -83,22 +88,25 @@ ul
   li:nth-child(3n+3)
     margin-right 0px
 
-.graphics
-  ul li
-    width 220px
-    height auto
+.content-masonry
+  width 700px
+  #masonry-box
+    display -webkit-box
+    display -webkit-flex
+    display -ms-flexbox
+    display flex
+    -webkit-box-orient vertical
+    -webkit-box-direction normal
+    -webkit-flex-direction column
+    -ms-flex-direction column
+    flex-direction column
+    -webkit-flex-wrap wrap
+    -ms-flex-wrap wrap
+    flex-wrap wrap
+    height 100vw
 
-  li:nth-child(3n+3)
-    margin-right 0px
-
-.masonry
-  display: -ms-flexbox;
-  -ms-flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-direction: column;
-  flex-wrap: wrap;
-  img
-    width 100%
+    img
+      width 25%
 
 .video
   height 300px
