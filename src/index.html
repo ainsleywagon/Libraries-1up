@@ -11,17 +11,27 @@
       <div class="logo"><img src="img/cc-logo.png"></img>Creative Cloud</div>
       <div class="user"><img src="img/avatar.png"></img><img src="img/adobe-logo.jpg"></img></div>
     </div>
-    <div class="sub-nav">Share Save See How it Works</div>
-    <div>
-      <img src="bigG" alt="" />
+    <div class="author">by Megan Donahue<br>Last updated Feb 5, 2016</div>
+    <div class="sub-nav"><a href="#">Share</a><a href="#">Save</a><a href="#">How It Works</a></div>
+    <div class="cover">
       <h1>Material Design</h1>
+      <img src="img/g-material.png"/>
+      <img src="img/g-material-2.png"/>
+      <img src="img/g-material-3.png"/>
       <h4 class="description">We challenged ourselves to create a visual language for users that synthesizes
         the classic principles of good design.</h4>
+      <a class="subscribe-btn" href="#">Subscribe</a>
     </div>
   </header>
 
   <div class="container">
-    <div class="side-menu"></div>
+    <div class="side-menu">
+      <a href=".colors">Colors</a>
+      <a href=".themes">Color Themes</a>
+      <a href=".character-styles">Character Styles</a>
+      <a href=".layer-styles">Layer Styles</a>
+      <a href=".brushes">Brushes</a>
+    </div>
     <div class="content">
       <div class="colors">
         <h4>Colors</h4>
@@ -113,16 +123,16 @@
         </ul>
       </div>
 
-      <div class="graphics masonry">
+      <div class="content-masonry">
         <h4>Graphics</h4>
-        <ul>
-          <li class="grid-item"><img src="img/image1.jpg" alt=""></li>
-          <li class="grid-item"><img src="img/image2.jpg" alt=""></li>
-          <li class="grid-item"><img src="img/image3.jpg" alt=""></li>
-          <li class="grid-item"><img src="img/image4.jpg" alt=""></li>
-          <li class="grid-item"><img src="img/image5.jpg" alt=""></li>
-          <li class="grid-item"><img src="img/image6.jpg" alt=""></li>
-        </ul>
+          <div id="masonry-box">
+            <img class="item-mason" src="img/image1.jpg" alt="">
+            <img class="item-mason" src="img/image2.jpg" alt="">
+            <img class="item-mason" src="img/image3.jpg" alt="">
+            <img class="item-mason" src="img/image4.jpg" alt="">
+            <img class="item-mason" src="img/image5.jpg" alt="">
+            <img class="item-mason" src="img/image6.jpg" alt="">
+          </div>
       </div>
 
       <div class="video">
@@ -168,19 +178,20 @@
   <footer>
 
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
   <script>
     // vanilla JS
     // init with element
-    var grid = document.querySelector('.grid');
+    var grid = document.querySelector('#masonry-box');
     var msnry = new Masonry( grid, {
       // options...
-      itemSelector: '.grid-item',
+      itemSelector: '.item-mason',
       columnWidth: 200
     });
 
     // init with selector
-    var msnry = new Masonry( '.grid', {
+    var msnry = new Masonry( '#masonry-box', {
       // options...
     });
   </script>
