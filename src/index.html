@@ -126,12 +126,12 @@
       <div class="content-masonry">
         <h4>Graphics</h4>
           <div id="masonry-box">
-            <img src="img/image1.jpg" alt="">
-            <img src="img/image2.jpg" alt="">
-            <img src="img/image3.jpg" alt="">
-            <img src="img/image4.jpg" alt="">
-            <img src="img/image5.jpg" alt="">
-            <img src="img/image6.jpg" alt="">
+            <img class="item-mason" src="img/image1.jpg" alt="">
+            <img class="item-mason" src="img/image2.jpg" alt="">
+            <img class="item-mason" src="img/image3.jpg" alt="">
+            <img class="item-mason" src="img/image4.jpg" alt="">
+            <img class="item-mason" src="img/image5.jpg" alt="">
+            <img class="item-mason" src="img/image6.jpg" alt="">
           </div>
       </div>
 
@@ -178,19 +178,20 @@
   <footer>
 
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
   <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
   <script>
     // vanilla JS
     // init with element
-    var grid = document.querySelector('.grid');
+    var grid = document.querySelector('#masonry-box');
     var msnry = new Masonry( grid, {
       // options...
-      itemSelector: '.grid-item',
+      itemSelector: '.item-mason',
       columnWidth: 200
     });
 
     // init with selector
-    var msnry = new Masonry( '.grid', {
+    var msnry = new Masonry( '#masonry-box', {
       // options...
     });
   </script>
