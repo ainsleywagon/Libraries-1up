@@ -1,0 +1,252 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+// @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// @import "includes/paragraphs"
+// @import "includes/header"
+// @import "includes/container"
+
+$bgcolor: #F5F5F5;
+$btncolor: #1473E6;
+
+body {
+  background: $bgcolor;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  -webkit-padding-start: 0px;
+}
+
+// navbar
+header {
+  width: 100vw;
+  background: white;
+  position: fixed;
+  .main-nav {
+    height: 50px;
+    width: 100vw;
+    background: black;
+    color: white;
+  }
+  .user {
+    margin: 15px;
+  }
+  .author {
+    float: left;
+    text-align: left;
+    margin: 15px;
+    font-size: 10px;
+  }
+  .sub-nav {
+    height: 50px;
+    background: white;
+    a {
+      margin: 15px;
+      float: right;
+      color: black;
+    }
+  }
+  .main-nav, .sub-nav {
+    img {
+      height: 24px;
+    }
+  }
+
+  .logo {
+    float: left;
+  }
+  .user {
+    float: right;
+  }
+}
+
+//main container with content
+.container {
+  padding-top: 58px;
+  .cover {
+    background-color: white;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    img {
+      max-height: 110px;
+    }
+    h1 {
+      font-weight: 200;
+      padding-top: 50px;
+    }
+    .description {
+      max-width: 400px;
+      font-weight: 200;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .subscribe-btn {
+      color: white;
+      background: $btncolor;
+      padding: 7px 15px;
+      border-radius: 17px;
+      margin: 20px;
+    }
+  }
+  .side-menu {
+    float: left;
+    text-align: right;
+    margin: 0;
+    position: fixed;
+  }
+}
+
+.content {
+  width: 700px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 0;
+      list-style: none;
+      flex-grow: 1;
+      justify-content: space-between;
+      height: 100px;
+    }
+  }
+  h4 {
+    text-align: left;
+    font-weight: 400;
+    color: gray;
+    margin-top: 0;
+  }
+  .colors {
+    height: 400px;
+    ul li {
+      background: purple;
+      width: 100px;
+    }
+    li:nth-child(6n+6) {
+      margin-right: 0px;
+    }
+  }
+  .themes {
+    height: 400px;
+    ul li {
+      width: 220px;
+      background-color: tomato;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+  .character-styles {
+    height: 500px;
+    ul li{
+      width: 220px;
+      height: 220px;
+      background-color: papayawhip;
+    }
+    li:nth-child(3n+3){
+        margin-right: 0px;
+    }
+  }
+
+  .layer-styles {
+    height: 500px;
+    ul li {
+      width: 220px;
+      height: 220px;
+      background-color: turquoise;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+
+  .brushes {
+    height: 350px;
+    ul li {
+      height: 80px;
+      width: 220px;
+      background-color: mediumspringgreen;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+
+  .patterns {
+    height: 500px;
+    ul li {
+      width: 220px;
+      height: 220px;
+      background-color: navajowhite;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+
+  .video {
+    height: 300px;
+    ul li {
+      width: 220px;
+      background-color: black;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+
+  .threed {
+    height: 300px;
+    ul li {
+      width: 220px;
+      background-color: black;
+    }
+    li:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+  }
+
+  .looks {
+    height: 300px;
+    ul li {
+      width: 220px;
+      background-color: black;
+    }
+    li:nth-child(3n+3){
+      margin-right: 0px;
+    }
+}
+
+.content-masonry {
+  width: 700px;
+  #masonry-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vw;
+  }
+  img {
+      width: 25%;
+      }
+  }
+}
