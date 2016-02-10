@@ -11,5 +11,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
+  }
 }

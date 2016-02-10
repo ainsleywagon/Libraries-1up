@@ -96,11 +96,12 @@ header .user {
   margin: 20px;
 }
 
-.container .side-menu {
+.container .sidenav {
   float: left;
   text-align: right;
   margin: 0;
-  position: fixed;
+  position: absolute;
+  z-index: 1000;
 }
 
 .content {

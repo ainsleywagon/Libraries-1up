@@ -6,20 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Libraries 1up</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
   </head>
   <body>
   <header>
@@ -46,7 +34,7 @@
       <a class="subscribe-btn" href="#">Subscribe</a>
     </div>
 
-    <ul class="side-menu" style="border: 1px solid red;">
+    <ul class="sidenav" style="border: 1px solid red;">
       <li><a data-scroll-nav="0">Colors</a></li>
       <li><a data-scroll-nav="1">Color Themes</a></li>
       <li><a data-scroll-nav="2">Character Styles</a></li>
@@ -208,22 +196,15 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!-- <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script> -->
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
     <script src="https://d1ml0gfpm9yj9s.cloudfront.net/scrollIt.min.js"></script>
+    <script src="bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js" charset="utf-8"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
+    <script src="js/app.js"></script>
     <!-- endbuild -->
 
-    <script>
-
-      //ScrollIt.js function
-      $(function(){
-      $.scrollIt();
-      });
-
-    </script>
   </body>
 </html>
