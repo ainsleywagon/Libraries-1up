@@ -104,6 +104,10 @@ header .user {
   z-index: 1000;
 }
 
+.container .sidenav li a {
+  color: purple;
+}
+
 .content {
   width: 700px;
   margin: 0 auto;
@@ -120,7 +124,7 @@ header .user {
   padding: 0;
   list-style: none;
   flex-grow: 1;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   height: 100px;
 }
 
@@ -129,10 +133,6 @@ header .user {
   font-weight: 400;
   color: gray;
   margin-top: 0;
-}
-
-.content .colors {
-  height: 400px;
 }
 
 .content .colors ul li {
@@ -144,10 +144,6 @@ header .user {
   margin-right: 0px;
 }
 
-.content .themes {
-  height: 400px;
-}
-
 .content .themes ul li {
   width: 220px;
   background-color: tomato;
@@ -157,13 +153,9 @@ header .user {
   margin-right: 0px;
 }
 
-.content .character-styles {
-  height: 500px;
-}
-
 .content .character-styles ul li {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 32px;
   background-color: papayawhip;
 }
 
@@ -171,13 +163,9 @@ header .user {
   margin-right: 0px;
 }
 
-.content .layer-styles {
-  height: 500px;
-}
-
 .content .layer-styles ul li {
-  width: 220px;
-  height: 220px;
+  width: 168px;
+  height: 168px;
   background-color: turquoise;
 }
 
@@ -185,13 +173,9 @@ header .user {
   margin-right: 0px;
 }
 
-.content .brushes {
-  height: 350px;
-}
-
 .content .brushes ul li {
-  height: 80px;
-  width: 220px;
+  height: 53px;
+  width: 168px;
   background-color: mediumspringgreen;
 }
 
@@ -199,13 +183,9 @@ header .user {
   margin-right: 0px;
 }
 
-.content .patterns {
-  height: 500px;
-}
-
 .content .patterns ul li {
-  width: 220px;
-  height: 220px;
+  width: 168px;
+  height: 168px;
   background-color: navajowhite;
 }
 
@@ -213,25 +193,19 @@ header .user {
   margin-right: 0px;
 }
 
-.content .video {
-  height: 300px;
-}
-
 .content .video ul li {
-  width: 220px;
-  background-color: black;
+  width: 168px;
+  height: 95px;
+  background-color: blue;
 }
 
 .content .video li:nth-child(3n+3) {
   margin-right: 0px;
 }
 
-.content .threed {
-  height: 300px;
-}
-
 .content .threed ul li {
-  width: 220px;
+  width: 168px;
+  height: 126px;
   background-color: black;
 }
 
@@ -239,12 +213,9 @@ header .user {
   margin-right: 0px;
 }
 
-.content .looks {
-  height: 300px;
-}
-
 .content .looks ul li {
-  width: 220px;
+  width: 168px;
+  height: 127px;
   background-color: black;
 }
 
@@ -274,4 +245,10 @@ header .user {
 
 .content .content-masonry img {
   width: 25%;
+}
+
+.howitworks {
+  background-color: #424242;
+  width: 100vw;
+  padding: 40px 0px;
 }
