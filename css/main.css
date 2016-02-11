@@ -178,6 +178,7 @@ header .sub-nav img {
 }
 .content .content-masonry .grid-item {
   width: 190px;
+  margin-bottom: 20px;
 }
 .howitworks {
   background-color: #424242;

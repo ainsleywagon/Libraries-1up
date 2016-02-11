@@ -38,5 +38,5 @@ $(".view-more").click(function () {
 $('.grid').masonry({
   // options
   itemSelector: '.grid-item',
-  columnWidth: 190
+  columnWidth: 210
 });
