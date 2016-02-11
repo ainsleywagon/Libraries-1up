@@ -107,6 +107,15 @@ header .sub-nav img {
   list-style: none;
   height: 100px;
 }
+.content .overflow {
+  text-align: left;
+  margin-top: -20px;
+}
+.content .overflow .view-more a {
+  color: #00f;
+  font-size: 14px;
+  font-weight: bold;
+}
 .content .overflow-content {
   display: none;
 }
@@ -114,56 +123,43 @@ header .sub-nav img {
   text-align: left;
   font-weight: 400;
   color: #808080;
-  margin-top: 0;
+  margin-top: 20px;
 }
 .content .colors ul li {
   background: #800080;
-  width: 100px;
-}
-.content .colors li:nth-child(6n + 6) {
-  margin-right: 0px;
+  width: 85px;
+  height: 85px;
 }
 .content .themes ul li {
-  width: 220px;
-  background-color: #ff6347;
-}
-.content .themes li:nth-child(3n + 3) {
-  margin-right: 0px;
+  width: 190px;
+  height: 190px;
+  background-image: url("../images/color-theme.png");
 }
 .content .character-styles ul li {
-  width: 200px;
-  height: 32px;
-  background-color: #ffefd5;
+  width: 190px;
+  height: 190px;
+  background-image: url("../images/char-style.png");
 }
 .content .character-styles li:nth-child(3n + 3) {
   margin-right: 0px;
 }
 .content .layer-styles ul li {
-  width: 168px;
-  height: 168px;
+  width: 190px;
+  height: 190px;
   background-color: #40e0d0;
 }
-.content .layer-styles li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
 .content .brushes ul li {
-  height: 53px;
-  width: 168px;
+  height: 60px;
+  width: 190px;
   background-color: #00fa9a;
 }
-.content .brushes li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
 .content .patterns ul li {
-  width: 168px;
+  width: 190px;
   height: 168px;
   background-color: #ffdead;
 }
-.content .patterns li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
 .content .video ul li {
-  width: 168px;
+  width: 190px;
   height: 95px;
   background-color: #00f;
 }
@@ -171,23 +167,17 @@ header .sub-nav img {
   margin-right: 0px;
 }
 .content .threed ul li {
-  width: 168px;
+  width: 190px;
   height: 126px;
   background-color: #000;
 }
-.content .threed li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
 .content .looks ul li {
-  width: 168px;
+  width: 190px;
   height: 127px;
   background-color: #000;
 }
-.content .looks li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
 .content .content-masonry .grid-item {
-  width: 200px;
+  width: 190px;
 }
 .howitworks {
   background-color: #424242;
