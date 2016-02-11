@@ -1,6 +1,9 @@
 //ScrollIt.js function
 $(function(){
-$.scrollIt();
+$.scrollIt({
+  activeClass: 'active', // class given to the active nav element
+  topOffset: -120           // offste (in px) for fixed top navigation
+});
 });
 
 //Fixing the sidenav to a certain height
@@ -12,9 +15,3 @@ new ScrollMagic.Scene({
 })
 .setPin('.sidenav')
 .addTo(controller);
-
-// //Adding the current class onto the selected menu
-// $('.sidenav li a').click(function() {
-// $('.sidenav li a').removeClass(“current”);
-// $(this).parent().addClass(“current”);
-// });
