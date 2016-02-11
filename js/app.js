@@ -15,3 +15,28 @@ new ScrollMagic.Scene({
 })
 .setPin('.sidenav')
 .addTo(controller);
+
+//reveal overflow content
+$(".view-more").click(function () {
+
+  $overflow = $(this);
+  //getting the next element
+  $content = $overflow.next();
+  //open up the content needed - toggle the slide - if visible, slide up, if not slide down.
+  $content.slideToggle(500, function () {
+    //execute this after slideToggle is done
+    //change text of header based on visibility of content div
+    $overflow.text(function () {
+      //change text based on condition
+      return $content.is(":visible") ? "Collapse" : "Expand";
+
+    });
+  });
+});
+
+//masonry
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});

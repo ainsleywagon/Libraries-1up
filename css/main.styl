@@ -70,9 +70,12 @@ header .main-nav img, header .sub-nav img
     margin 0
     position absolute
     z-index 1000
+    color gray
     li
-      a
-        color purple
+      list-style-type none
+    .active
+      color black
+      border-left: medium solid #000000;
 
 .content
   width 700px
@@ -87,6 +90,8 @@ header .main-nav img, header .sub-nav img
       list-style none
       // flex-grow 1
       height 100px
+  .overflow-content
+    display: none;
   h4
     text-align left
     font-weight 400
@@ -181,23 +186,8 @@ header .main-nav img, header .sub-nav img
         & + 3)
           margin-right 0px
   .content-masonry
-    width 700px
-    #masonry-box
-      display -webkit-box
-      display -webkit-flex
-      display -ms-flexbox
-      display flex
-      -webkit-box-orient vertical
-      -webkit-box-direction normal
-      -webkit-flex-direction column
-      -ms-flex-direction column
-      flex-direction column
-      -webkit-flex-wrap wrap
-      -ms-flex-wrap wrap
-      flex-wrap wrap
-      height 100vw
-    img
-      width 25%
+    .grid-item
+      width 200px
 
 .howitworks
   background-color #424242
