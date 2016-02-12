@@ -105,7 +105,6 @@ header .sub-nav img {
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
-  height: 100px;
 }
 .content .overflow {
   text-align: left;
@@ -145,10 +144,8 @@ header .sub-nav img {
   height: 190px;
   background-image: url("../images/layer-style.png");
 }
-.content .brushes ul li {
-  height: 60px;
+.content .brushes ul li img {
   width: 190px;
-  background-image: url("../images/brush.jpg");
 }
 .content .patterns ul li {
   width: 190px;
