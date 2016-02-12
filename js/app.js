@@ -16,23 +16,20 @@ new ScrollMagic.Scene({
 .setPin('.sidenav')
 .addTo(controller);
 
-//reveal overflow content
-$(".view-more").click(function () {
+//reveal extra content
+function showHide(shID) {
+	if (document.getElementById(shID)) {
+		if (document.getElementById(shID+'-show').style.display != 'none') {
+			document.getElementById(shID+'-show').style.display = 'none';
+			document.getElementById(shID).style.display = 'block';
+		}
+		else {
+			document.getElementById(shID+'-show').style.display = 'inline';
+			document.getElementById(shID).style.display = 'none';
+		}
+	}
+}
 
-  $overflow = $(this);
-  //getting the next element
-  $content = $overflow.next();
-  //open up the content needed - toggle the slide - if visible, slide up, if not slide down.
-  $content.slideToggle(500, function () {
-    //execute this after slideToggle is done
-    //change text of header based on visibility of content div
-    $overflow.text(function () {
-      //change text based on condition
-      return $content.is(":visible") ? "Collapse" : "Expand";
-
-    });
-  });
-});
 
 //masonry
 $('.grid').masonry({

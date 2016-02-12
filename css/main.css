@@ -1,10 +1,9 @@
 @import "fonts.css";
-
 body {
   background: #f5f5f5;
   text-align: center;
   margin: 0 auto;
-  font-family: 'adobe-clean', sans-serif;
+  font-family: 'Adobe Clean', sans-serif;
   font-weight: 200;
 }
 a {
@@ -130,6 +129,25 @@ header .sub-nav img {
   background: #800080;
   width: 85px;
   height: 85px;
+}
+.content .colors .more {
+  display: none;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.content .colors a.showLink,
+.content .colors a.hideLink {
+  text-decoration: none;
+  color: #36f;
+  padding-left: 8px;
+  background: transparent url("down.gif") no-repeat left;
+}
+.content .colors a.hideLink {
+  background: transparent url("up.gif") no-repeat left;
+}
+.content .colors a.showLink:hover,
+.content .colors a.hideLink:hover {
+  border-bottom: 1px dotted #36f;
 }
 .content .themes ul li {
   width: 190px;

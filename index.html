@@ -48,7 +48,7 @@
     </ul>
 
     <div class="content">
-      <div data-scroll-index="0" class="colors sec">
+      <div data-scroll-index="0" class="colors">
         <h4>Colors</h4>
         <ul>
           <li style="background-color: #FFEBEE;"></li>
@@ -70,21 +70,24 @@
           <li style="background-color: #F06292;"></li>
           <li style="background-color: #F48FB1;"></li>
         </ul>
-        <div class="overflow">
-          <span class="view-more"><a href="">View 10 More</a></span>
-          <ul class="overflow-content">
-            <li style="background-color: #37474F;"></li>
-            <li style="background-color: #4CB5AB;"></li>
-            <li style="background-color: #37474F;"></li>
-            <li style="background-color: #ECEFF0;"></li>
-            <li style="background-color: #E4E7E8;"></li>
-            <li style="background-color: #263238;"></li>
-            <li style="background-color: #20272B;"></li>
-            <li style="background-color: #607D8B;"></li>
-            <li style="background-color: #F5F5F5;"></li>
-            <li style="background-color: #212121;"></li>
-          </ul>
-        </div>
+
+          <span><a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">View 10 More</a></span>
+          <div id="example" class="more">
+            <ul>
+              <li style="background-color: #37474F;"></li>
+              <li style="background-color: #4CB5AB;"></li>
+              <li style="background-color: #37474F;"></li>
+              <li style="background-color: #ECEFF0;"></li>
+              <li style="background-color: #E4E7E8;"></li>
+              <li style="background-color: #263238;"></li>
+              <li style="background-color: #20272B;"></li>
+              <li style="background-color: #607D8B;"></li>
+              <li style="background-color: #F5F5F5;"></li>
+              <li style="background-color: #212121;"></li>
+            </ul>
+            <a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">View Less</a>
+          </div>
+
       </div>
 
       <div data-scroll-index="1" class="themes">
