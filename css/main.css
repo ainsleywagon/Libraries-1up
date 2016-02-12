@@ -155,24 +155,18 @@ header .sub-nav img {
 .content .content-masonry .grid-item {
   width: 190px;
   margin-bottom: 20px;
+  z-index: -1;
 }
 .content .video ul li {
   width: 190px;
   height: 95px;
-  background-color: #00f;
+  background-image: url("../images/video.jpeg");
 }
-.content .video li:nth-child(3n + 3) {
-  margin-right: 0px;
-}
-.content .threed ul li {
+.content .threed ul li img {
   width: 190px;
-  height: 126px;
-  background-color: #000;
 }
-.content .looks ul li {
+.content .looks ul li img {
   width: 190px;
-  height: 127px;
-  background-color: #000;
 }
 .howitworks {
   background-color: #424242;
