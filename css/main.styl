@@ -2,7 +2,6 @@
 
 body
   background #F5F5F5
-  text-align center
   margin 0 auto
   font-family 'Adobe Clean', sans-serif
   font-weight 200
@@ -46,6 +45,7 @@ header .main-nav img, header .sub-nav img
 .container
   padding-top 58px
   .cover
+    text-align center
     background-color white
     padding-bottom 50px
     margin-bottom 50px
@@ -85,18 +85,12 @@ header .main-nav img, header .sub-nav img
   ul
     display flex
     flex-wrap wrap
+    margin-bottom 0px
     li
       margin-right 20px
       margin-bottom 20px
       padding 0
       list-style none
-  .overflow
-    text-align left
-    margin-top -20px
-    .view-more a
-      color blue
-      font-size 14px
-      font-weight bold
   .overflow-content
     display: none;
   h4
@@ -107,24 +101,15 @@ header .main-nav img, header .sub-nav img
   .colors
     ul
       li
-        background purple
         width 85px
         height 85px
     .more
       display none
-      border-top 1px solid #666
-      border-bottom 1px solid #666
+      margin-top: -15px
     a.showLink, a.hideLink
-      text-decoration none
-      color #36f
-      padding-left 8px
-      background transparent url('down.gif') no-repeat left
-    a
-      &.hideLink
-        background transparent url('up.gif') no-repeat left
-    a.showLink:hover, a.hideLink:hover
-      border-bottom 1px dotted #36f
-
+      color #1473e6
+      font-weight 600
+      margin-top -20px
 
   .themes
     ul
@@ -154,7 +139,6 @@ header .main-nav img, header .sub-nav img
       li
         width 190px
         height 60px
-        background-color navajowhite
   .content-masonry
     .grid-item
       width 190px

@@ -1,7 +1,6 @@
 @import "fonts.css";
 body {
   background: #f5f5f5;
-  text-align: center;
   margin: 0 auto;
   font-family: 'Adobe Clean', sans-serif;
   font-weight: 200;
@@ -53,6 +52,7 @@ header .sub-nav img {
   padding-top: 58px;
 }
 .container .cover {
+  text-align: center;
   background-color: #fff;
   padding-bottom: 50px;
   margin-bottom: 50px;
@@ -100,21 +100,13 @@ header .sub-nav img {
 .content ul {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 0px;
 }
 .content ul li {
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 0;
   list-style: none;
-}
-.content .overflow {
-  text-align: left;
-  margin-top: -20px;
-}
-.content .overflow .view-more a {
-  color: #00f;
-  font-size: 14px;
-  font-weight: bold;
 }
 .content .overflow-content {
   display: none;
@@ -126,28 +118,18 @@ header .sub-nav img {
   margin-top: 20px;
 }
 .content .colors ul li {
-  background: #800080;
   width: 85px;
   height: 85px;
 }
 .content .colors .more {
   display: none;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+  margin-top: -15px;
 }
 .content .colors a.showLink,
 .content .colors a.hideLink {
-  text-decoration: none;
-  color: #36f;
-  padding-left: 8px;
-  background: transparent url("down.gif") no-repeat left;
-}
-.content .colors a.hideLink {
-  background: transparent url("up.gif") no-repeat left;
-}
-.content .colors a.showLink:hover,
-.content .colors a.hideLink:hover {
-  border-bottom: 1px dotted #36f;
+  color: #1473e6;
+  font-weight: 600;
+  margin-top: -20px;
 }
 .content .themes ul li {
   width: 190px;
@@ -170,7 +152,6 @@ header .sub-nav img {
 .content .patterns ul li {
   width: 190px;
   height: 60px;
-  background-color: #ffdead;
 }
 .content .content-masonry .grid-item {
   width: 190px;

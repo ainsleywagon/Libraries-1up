@@ -16,7 +16,7 @@ new ScrollMagic.Scene({
 .setPin('.sidenav')
 .addTo(controller);
 
-//reveal extra content
+//reveal extra content code from cssnewbie.com
 function showHide(shID) {
 	if (document.getElementById(shID)) {
 		if (document.getElementById(shID+'-show').style.display != 'none') {
