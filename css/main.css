@@ -134,7 +134,7 @@ header .sub-nav img {
   height: 85px;
 }
 .content .colors ul li:hover {
-  background-image: url("../images/color-hover.png");
+  background-image: url("../images/hover-color.png");
 }
 .content .colors .more {
   display: none;
@@ -150,6 +150,9 @@ header .sub-nav img {
   width: 190px;
   height: 85px;
   background-image: url("../images/color-theme.png");
+}
+.content .themes ul li:hover {
+  background-image: url("../images/hover-theme.png");
 }
 .content .character-styles ul li {
   width: 190px;
