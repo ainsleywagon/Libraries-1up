@@ -45,6 +45,15 @@ function showHide(shID) {
 	}
 }
 
+//fading top text with scroll
+$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = $(window).height();
+    $('.cover').css({
+        'opacity': ((height - scrollTop - 100) / height)
+    });
+});
+
 
 //masonry
 $('.grid').masonry({
