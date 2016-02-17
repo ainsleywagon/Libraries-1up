@@ -35,7 +35,7 @@ header .author {
 header .sub-nav {
   height: 50px;
   background: #fff;
-img
+  margin: 0;
 }
 header .sub-nav .sub-nav-hide {
   display: none;
@@ -43,16 +43,14 @@ header .sub-nav .sub-nav-hide {
 header .sub-nav .reveal {
   display: block;
 }
-header .sub-nav ul {
-  margin-top: 0;
-}
-header .sub-nav li {
-  display: inline;
-  list-style-type: none;
-}
 header .sub-nav a {
+  margin: 15px;
   float: right;
   color: #000;
+}
+header .sub-nav a img {
+  position: absolute;
+  left: 25px;
 }
 header .logo {
   float: left;

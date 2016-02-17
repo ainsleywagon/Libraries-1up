@@ -20,7 +20,7 @@ new ScrollMagic.Scene({
 var controller = new ScrollMagic.Controller({
   globalSceneOptions: {
     duration: 0,
-    offset: 300
+    offset: 180
   }
 });
 
