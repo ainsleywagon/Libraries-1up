@@ -133,6 +133,9 @@ header .sub-nav img {
   width: 85px;
   height: 85px;
 }
+.content .colors ul li:hover {
+  background-image: url("../images/color-hover.png");
+}
 .content .colors .more {
   display: none;
   margin-top: -15px;
