@@ -49,6 +49,13 @@ header .sub-nav a {
   float: right;
   color: #000;
 }
+header .sub-nav a .subscribe-btn {
+  color: #fff;
+  background: #1473e6;
+  padding: 7px 15px;
+  border-radius: 17px;
+  margin: 20px;
+}
 header .sub-nav a img {
   position: absolute;
   left: 25px;
@@ -92,9 +99,9 @@ header .sub-nav img {
 }
 .container .sidenav {
   width: 15vw;
-  text-align: left;
+  text-align: right;
   margin: 0;
-  margin-left: 5vw;
+  margin-right: 5vw;
   position: absolute;
   z-index: 1000;
   color: #808080;
@@ -106,12 +113,12 @@ header .sub-nav img {
   margin-bottom: 10px;
 }
 .container .sidenav li a {
-  padding-left: 15px;
+  padding-right: 15px;
   color: #404040;
 }
 .container .sidenav .active {
   color: #000;
-  border-left: medium solid #000;
+  border-right: medium solid #000;
   transition: all 150ms ease-in-out;
 }
 .content {
