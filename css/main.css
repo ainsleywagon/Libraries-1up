@@ -35,9 +35,22 @@ header .author {
 header .sub-nav {
   height: 50px;
   background: #fff;
+img
+}
+header .sub-nav .sub-nav-hide {
+  display: none;
+}
+header .sub-nav .reveal {
+  display: block;
+}
+header .sub-nav ul {
+  margin-top: 0;
+}
+header .sub-nav li {
+  display: inline;
+  list-style-type: none;
 }
 header .sub-nav a {
-  margin: 15px;
   float: right;
   color: #000;
 }
@@ -79,7 +92,7 @@ header .sub-nav img {
   margin: 20px;
 }
 .container .sidenav {
-  float: left;
+  width: 15vw;
   text-align: right;
   margin: 0;
   position: absolute;
@@ -94,7 +107,7 @@ header .sub-nav img {
   border-left: medium solid #000;
 }
 .content {
-  width: 700px;
+  width: 65vw;
   margin: 0 auto;
 }
 .content ul {

@@ -10,11 +10,26 @@ $.scrollIt({
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
-  duration: 5000, // the scene should last for a scroll distance of 2500px
-  offset: 390 // start this scene after scrolling 200px
+  duration: 0, // the scene should last for a scroll distance of 2500px
+  offset: 390 // start this scene after scrolling 390px
 })
 .setPin('.sidenav')
 .addTo(controller);
+
+//Revealing the logo and subscribe button in the navbar after you've scrolled past header
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: {
+    duration: 0,
+    offset: 300
+  }
+});
+
+//build scenes
+new ScrollMagic.Scene({
+  triggerElement: ".content"
+})
+      .setClassToggle(".sub-nav-hide", "reveal") //add class toggle
+      .addTo(controller);
 
 //reveal extra content code from cssnewbie.com
 function showHide(shID) {
