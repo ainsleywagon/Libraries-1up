@@ -78,21 +78,29 @@ header .main-nav img, header .sub-nav img
       margin 20px
   .sidenav
     width 15vw
-    text-align right
+    text-align left
     margin 0
+    margin-left 5vw
     position absolute
     z-index 1000
     color gray
     li
       list-style-type none
+      text-transform uppercase
+      font-size 13px
+      margin-bottom 10px
+      a
+        padding-left 15px
+        color #404040
     .active
       color black
-      border-left: medium solid #000000;
+      border-left medium solid #000000
+      transition all 150ms ease-in-out
 
 .content
   width 65vw
   margin 0 auto
-  justify-content center
+  margin-left 20vw
   ul
     display flex
     flex-wrap wrap
@@ -103,14 +111,14 @@ header .main-nav img, header .sub-nav img
       padding 0
       list-style none
 
-
   .overflow-content
-    display: none;
+    display none
   h4
     text-align left
     font-weight 400
-    color gray
-    margin-top 20px
+    color #404040
+    margin-top 50px
+    text-transform uppercase
   .colors
     ul
       li
@@ -123,9 +131,10 @@ header .main-nav img, header .sub-nav img
       display none
       margin-top: -15px
     a.showLink, a.hideLink
-      color #1473e6
+      color #404040
       font-weight 400
       margin-top -20px
+      font-size 14px
 
   .themes
     ul

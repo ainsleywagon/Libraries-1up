@@ -92,22 +92,32 @@ header .sub-nav img {
 }
 .container .sidenav {
   width: 15vw;
-  text-align: right;
+  text-align: left;
   margin: 0;
+  margin-left: 5vw;
   position: absolute;
   z-index: 1000;
   color: #808080;
 }
 .container .sidenav li {
   list-style-type: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.container .sidenav li a {
+  padding-left: 15px;
+  color: #404040;
 }
 .container .sidenav .active {
   color: #000;
   border-left: medium solid #000;
+  transition: all 150ms ease-in-out;
 }
 .content {
   width: 65vw;
   margin: 0 auto;
+  margin-left: 20vw;
 }
 .content ul {
   display: flex;
@@ -126,8 +136,9 @@ header .sub-nav img {
 .content h4 {
   text-align: left;
   font-weight: 400;
-  color: #808080;
-  margin-top: 20px;
+  color: #404040;
+  margin-top: 50px;
+  text-transform: uppercase;
 }
 .content .colors ul li {
   width: 85px;
@@ -142,9 +153,10 @@ header .sub-nav img {
 }
 .content .colors a.showLink,
 .content .colors a.hideLink {
-  color: #1473e6;
+  color: #404040;
   font-weight: 400;
   margin-top: -20px;
+  font-size: 14px;
 }
 .content .themes ul li {
   width: 190px;
