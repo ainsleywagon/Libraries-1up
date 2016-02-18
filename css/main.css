@@ -178,6 +178,9 @@ header .sub-nav img {
   height: 190px;
   background-image: url("../images/char-style.png");
 }
+.content .character-styles ul li:hover {
+  background-image: url("../images/hover-charstyle.png");
+}
 .content .layer-styles ul li {
   width: 190px;
   height: 190px;
