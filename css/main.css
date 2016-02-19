@@ -169,10 +169,37 @@ header .sub-nav img {
 .content .character-styles ul li:hover {
   background-image: url("../images/hover-charstyle.png");
 }
+.content .character-styles ul .char-style-2 {
+  background-image: url("../images/char-style-2.png");
+}
+.content .character-styles ul .char-style-2:hover {
+  background-image: url("../images/hover-charstyle.png");
+}
+.content .character-styles ul .char-style-3 {
+  background-image: url("../images/char-style-3.png");
+}
+.content .character-styles ul .char-style-3:hover {
+  background-image: url("../images/hover-charstyle.png");
+}
+.content .character-styles ul .char-style-4 {
+  background-image: url("../images/char-style-4.png");
+}
+.content .character-styles ul .char-style-4:hover {
+  background-image: url("../images/hover-charstyle.png");
+}
 .content .layer-styles ul li {
   width: 190px;
   height: 190px;
   background-image: url("../images/layer-style.png");
+}
+.content .layer-styles ul li:hover {
+  background-image: url("../images/hover-layer-style.png");
+}
+.content .layer-styles ul .layer-style-2 {
+  background-image: url("../images/layer-style-2.png");
+}
+.content .layer-styles ul .layer-style-3 {
+  background-image: url("../images/layer-style-3.png");
 }
 .content .brushes ul li img {
   width: 190px;
@@ -202,4 +229,5 @@ header .sub-nav img {
   width: 100vw;
   padding: 40px 0px;
   margin-top: 100px;
+  text-align: center;
 }
