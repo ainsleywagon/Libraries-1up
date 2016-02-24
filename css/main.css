@@ -110,6 +110,12 @@ header .sub-nav img {
   border-right: medium solid #000;
   transition: all 150ms ease-in-out;
 }
+.oneup {
+  text-align: center;
+}
+.oneup .asset {
+  margin-top: 100px;
+}
 .content {
   width: 65vw;
   margin: 0 auto;
