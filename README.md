@@ -6,3 +6,5 @@ Running python simple server:
 ```python -m simpleHTTPServer 8000```
 
 navigate to localhost:8000
+
+```npm start``` to watch the stylus styles
