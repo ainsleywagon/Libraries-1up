@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ainsleywagon/Libraries-1up/issues"
   },
-  "homepage": "https://github.com/ainsleywagon/Libraries-1up#readme"
+  "homepage": "https://github.com/ainsleywagon/Libraries-1up#readme",
+  "dependencies": {
+    "simple-server": "^1.0.1"
+  }
 }
