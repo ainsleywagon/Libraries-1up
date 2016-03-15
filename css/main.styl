@@ -70,9 +70,11 @@ header .main-nav img, header .sub-nav img
     .subscribe-btn
       color white
       background #1473E6
-      padding 7px 15px
+      padding 5px 40px
       border-radius 17px
       margin 20px
+    .down-arrow
+      display none
   .sidenav
     width 15vw
     text-align right
@@ -217,3 +219,22 @@ header .main-nav img, header .sub-nav img
   padding 40px 0px
   margin-top 100px
   text-align center
+
+@media only screen and (max-width: 768px)
+  .sidenav
+    display none
+  .container
+    .cover
+      h1
+        font-size 3em
+        padding-top 190px
+      .description
+        margin-top 40px
+        margin-bottom 30px
+      .subscribe-btn
+        margin-bottom 50px
+      .down-arrow
+        display block
+        max-width 50px
+        margin 0 auto
+        padding 175px 0px 100px 0px

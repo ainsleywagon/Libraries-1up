@@ -82,9 +82,12 @@ header .sub-nav img {
 .container .cover .subscribe-btn {
   color: #fff;
   background: #1473e6;
-  padding: 7px 15px;
+  padding: 5px 40px;
   border-radius: 17px;
   margin: 20px;
+}
+.container .cover .down-arrow {
+  display: none;
 }
 .container .sidenav {
   width: 15vw;
@@ -236,4 +239,26 @@ header .sub-nav img {
   padding: 40px 0px;
   margin-top: 100px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+  .container .cover h1 {
+    font-size: 3em;
+    padding-top: 190px;
+  }
+  .container .cover .description {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .container .cover .subscribe-btn {
+    margin-bottom: 50px;
+  }
+  .container .cover .down-arrow {
+    display: block;
+    max-width: 50px;
+    margin: 0 auto;
+    padding: 175px 0px 100px 0px;
+  }
 }
