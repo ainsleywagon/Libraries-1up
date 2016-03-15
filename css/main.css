@@ -175,26 +175,14 @@ header .sub-nav img {
   height: 190px;
   background-image: url("../images/char-style.png");
 }
-.content .character-styles ul li:hover {
-  background-image: url("../images/hover-charstyle.png");
-}
 .content .character-styles ul .char-style-2 {
   background-image: url("../images/char-style-2.png");
-}
-.content .character-styles ul .char-style-2:hover {
-  background-image: url("../images/hover-charstyle.png");
 }
 .content .character-styles ul .char-style-3 {
   background-image: url("../images/char-style-3.png");
 }
-.content .character-styles ul .char-style-3:hover {
-  background-image: url("../images/hover-charstyle.png");
-}
 .content .character-styles ul .char-style-4 {
   background-image: url("../images/char-style-4.png");
-}
-.content .character-styles ul .char-style-4:hover {
-  background-image: url("../images/hover-charstyle.png");
 }
 .content .layer-styles ul li {
   width: 190px;
@@ -240,6 +228,10 @@ header .sub-nav img {
   margin-top: 100px;
   text-align: center;
 }
+.howitworks img {
+  width: 100%;
+  max-width: 910px;
+}
 @media only screen and (max-width: 768px) {
   .sidenav {
     display: none;
@@ -260,5 +252,19 @@ header .sub-nav img {
     max-width: 50px;
     margin: 0 auto;
     padding: 175px 0px 100px 0px;
+  }
+  .container .content {
+    width: 83vw;
+    margin-left: 10vw;
+  }
+  .container .content ul li img {
+    max-width: 104px;
+  }
+  .container .content .colors ul li {
+    width: 104px;
+    height: 104px;
+  }
+  .container .content .themes li {
+    max-width: 104px;
   }
 }

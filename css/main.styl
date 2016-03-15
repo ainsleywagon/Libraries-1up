@@ -153,20 +153,12 @@ header .main-nav img, header .sub-nav img
         width 190px
         height 190px
         background-image url('../images/char-style.png')
-        &:hover
-          background-image url('../images/hover-charstyle.png')
       .char-style-2
         background-image url('../images/char-style-2.png')
-        &:hover
-          background-image url('../images/hover-charstyle.png')
       .char-style-3
         background-image url('../images/char-style-3.png')
-        &:hover
-          background-image url('../images/hover-charstyle.png')
       .char-style-4
         background-image url('../images/char-style-4.png')
-        &:hover
-          background-image url('../images/hover-charstyle.png')
 
   .layer-styles
     ul
@@ -219,6 +211,9 @@ header .main-nav img, header .sub-nav img
   padding 40px 0px
   margin-top 100px
   text-align center
+  img
+    width 100%
+    max-width 910px
 
 @media only screen and (max-width: 768px)
   .sidenav
@@ -238,3 +233,18 @@ header .main-nav img, header .sub-nav img
         max-width 50px
         margin 0 auto
         padding 175px 0px 100px 0px
+
+    .content
+      width 83vw
+      margin-left 10vw
+      ul
+        li
+          img
+            max-width 104px
+      .colors
+        ul
+          li
+            width 104px
+            height 104px
+      .themes li
+        max-width 104px
