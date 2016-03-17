@@ -58,6 +58,8 @@ header .main-nav img, header .sub-nav img
     margin-bottom 50px
     img
       max-height 110px
+      max-width 110px
+      margin-right 20px
     h1
       font-weight 200
       padding-top 50px
@@ -73,6 +75,10 @@ header .main-nav img, header .sub-nav img
       padding 5px 40px
       border-radius 17px
       margin 20px
+      transition all 0.5s ease
+      &:hover
+        color white
+        background #0f64d2
     .down-arrow
       display none
   .sidenav
@@ -130,14 +136,14 @@ header .main-nav img, header .sub-nav img
         &:hover
           background-image url('../images/hover-color.png')
 
-    .more
-      display none
-      margin-top: -15px
-    a.showLink, a.hideLink
-      color #404040
-      font-weight 400
-      margin-top -20px
-      font-size 14px
+  .more
+    display none
+    margin-top: -15px
+  a.showLink, a.hideLink
+    color #404040
+    font-weight 400
+    margin-top -20px
+    font-size 14px
 
   .themes
     ul

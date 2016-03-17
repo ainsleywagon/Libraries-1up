@@ -67,6 +67,8 @@ header .sub-nav img {
 }
 .container .cover img {
   max-height: 110px;
+  max-width: 110px;
+  margin-right: 20px;
 }
 .container .cover h1 {
   font-weight: 200;
@@ -85,6 +87,11 @@ header .sub-nav img {
   padding: 5px 40px;
   border-radius: 17px;
   margin: 20px;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribe-btn:hover {
+  color: #fff;
+  background: #0f64d2;
 }
 .container .cover .down-arrow {
   display: none;
@@ -152,12 +159,12 @@ header .sub-nav img {
 .content .colors ul li:hover {
   background-image: url("../images/hover-color.png");
 }
-.content .colors .more {
+.content .more {
   display: none;
   margin-top: -15px;
 }
-.content .colors a.showLink,
-.content .colors a.hideLink {
+.content a.showLink,
+.content a.hideLink {
   color: #404040;
   font-weight: 400;
   margin-top: -20px;
