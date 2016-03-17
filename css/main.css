@@ -81,6 +81,23 @@ header .sub-nav img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.container .cover .tooltip {
+  display: inline;
+  position: relative;
+}
+.container .cover .tooltip:hover:after {
+  background: #999;
+  color: #fff;
+  content: attr(title);
+  z-index: 98;
+  position: absolute;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 180px;
+  line-height: 16px;
+  left: 110%;
+}
 .container .cover .subscribe-btn {
   color: #fff;
   background: #1473e6;

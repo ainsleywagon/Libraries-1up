@@ -69,6 +69,21 @@ header .main-nav img, header .sub-nav img
       margin 0 auto
       margin-top 20px
       margin-bottom 20px
+    .tooltip
+      display inline
+      position relative
+      &:hover:after
+        background #999999
+        color white
+        content attr(title)
+        z-index 98
+        position absolute
+        font-size 11px
+        padding 4px 8px
+        border-radius 4px
+        width 180px
+        line-height 16px
+        left 110%
     .subscribe-btn
       color white
       background #1473E6
