@@ -302,15 +302,27 @@ header .logo img {
   width: 190px;
 }
 .howitworks {
-  background-color: #424242;
+  background-color: #fff;
   width: 100vw;
   padding: 40px 0px;
   margin-top: 100px;
   text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #707070;
+}
+.howitworks .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 .howitworks img {
-  width: 100%;
-  max-width: 910px;
+  max-width: 500px;
+}
+.howitworks .explain-text {
+  width: 20vw;
+  margin-left: 10vw;
 }
 @media only screen and (max-width: 768px) {
   .sidenav {
