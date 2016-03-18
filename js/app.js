@@ -31,7 +31,12 @@ new ScrollMagic.Scene({
       .setClassToggle(".sub-nav-hide", "reveal") //add class toggle
       .addTo(controller);
 
-//reveal extra content code from cssnewbie.com
+//change button style when it's clicked
+$('.subscribe-btn').on('click', function(){
+  $(this).toggleClass( "subscribed");
+});
+
+//reveal more content code from cssnewbie.com
 function showHide(shID) {
 	if (document.getElementById(shID)) {
 		if (document.getElementById(shID+'-show').style.display != 'none') {
@@ -53,7 +58,6 @@ $(window).scroll(function () {
         'opacity': ((height - scrollTop - 100) / height)
     });
 });
-
 
 //masonry
 $('.grid').masonry({

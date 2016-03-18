@@ -103,6 +103,8 @@ header
         line-height 16px
         left 110%
     .subscribe-btn
+      &::after
+        content "Follow"
       color white
       background #1473E6
       font-size 15px
@@ -113,6 +115,24 @@ header
       &:hover
         color white
         background #0f64d2
+        &::before
+          content "Follow"
+    .subscribed
+      color #1473e6
+      background transparent
+      border 2px solid #1473e6
+      transition all 0.5s ease
+      &::after
+        content "Following"
+      &:hover
+        color #1473e6
+        background transparent
+        border 2px solid #1473e6
+        transition all 0.5s ease
+        &::before
+          content "Following"
+          transition all 0.5s ease
+
     .down-arrow
       display none
   .sidenav

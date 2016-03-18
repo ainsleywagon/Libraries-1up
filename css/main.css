@@ -128,9 +128,34 @@ header .logo img {
   margin: 20px;
   transition: all 0.5s ease;
 }
+.container .cover .subscribe-btn::after {
+  content: "Follow";
+}
 .container .cover .subscribe-btn:hover {
   color: #fff;
   background: #0f64d2;
+}
+.container .cover .subscribe-btn:hover::before {
+  content: "Follow";
+}
+.container .cover .subscribed {
+  color: #1473e6;
+  background: transparent;
+  border: 2px solid #1473e6;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribed::after {
+  content: "Following";
+}
+.container .cover .subscribed:hover {
+  color: #1473e6;
+  background: transparent;
+  border: 2px solid #1473e6;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribed:hover::before {
+  content: "Following";
+  transition: all 0.5s ease;
 }
 .container .cover .down-arrow {
   display: none;
