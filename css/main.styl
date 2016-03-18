@@ -22,6 +22,8 @@ header
     width 100vw
     background black
     color white
+    img
+      height 24px
   .user
     margin 15px
     float right
@@ -34,10 +36,24 @@ header
     height 50px
     background white
     margin 0
+    img
+      height 24px
     .sub-nav-hide
       display none
     .reveal
       display block
+    .subscribe-btn
+      color white
+      background #1473E6
+      font-size 15px
+      padding 5px 14px
+      border-radius 16px
+      margin 9px
+      transition all 0.5s ease
+      &:hover
+        color white
+        background #0f64d2
+
     a
       margin 15px
       float right
@@ -45,9 +61,11 @@ header
 
   .logo
     float left
-
-header .main-nav img, header .sub-nav img
-  height 24px
+    display inline-flex
+    padding-top 15px
+    img
+      height 40px
+      margin-top -10px
 
 .container
   padding-top 58px
@@ -87,8 +105,9 @@ header .main-nav img, header .sub-nav img
     .subscribe-btn
       color white
       background #1473E6
-      padding 5px 40px
-      border-radius 17px
+      font-size 15px
+      padding 5px 14px
+      border-radius 16px
       margin 20px
       transition all 0.5s ease
       &:hover
@@ -117,9 +136,16 @@ header .main-nav img, header .sub-nav img
       border-right medium solid #000000
       transition all 150ms ease-in-out
 .oneup
-  text-align center
+  width 30%
+  margin auto
   .asset
-    margin-top 100px
+    margin-top 150px
+    h3
+      line-height 0
+    p
+      font-size 14px
+      line-height 0.4
+      color #707070
 
 .content
   width 65vw

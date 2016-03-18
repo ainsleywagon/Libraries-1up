@@ -23,6 +23,9 @@ header .main-nav {
   background: #000;
   color: #fff;
 }
+header .main-nav img {
+  height: 24px;
+}
 header .user {
   margin: 15px;
   float: right;
@@ -38,11 +41,27 @@ header .sub-nav {
   background: #fff;
   margin: 0;
 }
+header .sub-nav img {
+  height: 24px;
+}
 header .sub-nav .sub-nav-hide {
   display: none;
 }
 header .sub-nav .reveal {
   display: block;
+}
+header .sub-nav .subscribe-btn {
+  color: #fff;
+  background: #1473e6;
+  font-size: 15px;
+  padding: 5px 14px;
+  border-radius: 16px;
+  margin: 9px;
+  transition: all 0.5s ease;
+}
+header .sub-nav .subscribe-btn:hover {
+  color: #fff;
+  background: #0f64d2;
 }
 header .sub-nav a {
   margin: 15px;
@@ -51,10 +70,12 @@ header .sub-nav a {
 }
 header .logo {
   float: left;
+  display: inline-flex;
+  padding-top: 15px;
 }
-header .main-nav img,
-header .sub-nav img {
-  height: 24px;
+header .logo img {
+  height: 40px;
+  margin-top: -10px;
 }
 .container {
   padding-top: 58px;
@@ -101,8 +122,9 @@ header .sub-nav img {
 .container .cover .subscribe-btn {
   color: #fff;
   background: #1473e6;
-  padding: 5px 40px;
-  border-radius: 17px;
+  font-size: 15px;
+  padding: 5px 14px;
+  border-radius: 16px;
   margin: 20px;
   transition: all 0.5s ease;
 }
@@ -138,10 +160,19 @@ header .sub-nav img {
   transition: all 150ms ease-in-out;
 }
 .oneup {
-  text-align: center;
+  width: 30%;
+  margin: auto;
 }
 .oneup .asset {
-  margin-top: 100px;
+  margin-top: 150px;
+}
+.oneup .asset h3 {
+  line-height: 0;
+}
+.oneup .asset p {
+  font-size: 14px;
+  line-height: 0.4;
+  color: #707070;
 }
 .content {
   width: 65vw;
